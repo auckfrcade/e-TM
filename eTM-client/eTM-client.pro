@@ -1,10 +1,19 @@
 QT += \
-    network
+    network \
+    widgets
 
 HEADERS += \
-    include/sockettest.h
+    driversignup.h \
+    include/sockettest.h \
+    mainwin.h \
+    signin.h \
+    signup.h
 
 SOURCES += \
+    driversignup.cpp \
+    mainwin.cpp \
+    signin.cpp \
+    signup.cpp \
     src/main.cpp \
     src/sockettest.cpp
 

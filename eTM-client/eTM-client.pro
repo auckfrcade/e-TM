@@ -3,18 +3,16 @@ QT += \
     widgets
 
 HEADERS += \
-    driversignup.h \
-    include/sockettest.h \
-    mainwin.h \
-    signin.h \
-    signup.h
+    include/mainwin.h \
+    include/signin.h \
+    include/signup.h \
+    include/sockettest.h
 
 SOURCES += \
-    driversignup.cpp \
-    mainwin.cpp \
-    signin.cpp \
-    signup.cpp \
     src/main.cpp \
+    src/mainwin.cpp \
+    src/signin.cpp \
+    src/signup.cpp \
     src/sockettest.cpp
 
 INCLUDEPATH += \

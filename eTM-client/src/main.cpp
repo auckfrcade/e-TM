@@ -1,15 +1,15 @@
 #include <QCoreApplication>
 #include <QApplication>
 #include <QtWidgets>
-#include "sockettest.h"
-#include "mainwin.h"
+#include "include/sockettest.h"
+#include "include/mainwin.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    //QCoreApplication a(argc, argv);
 
-    SocketTest cTest;
-    cTest.Connect();
+    //SocketTest cTest;
+    //cTest.Connect();
 //    qDebug() << cTest.ReadDB("drivers");
 
     QApplication b(argc, argv);
@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
     myWin->setFixedWidth(400);
     myWin->setFixedHeight(400);
     myWin->show();
-    return a.exec();
+    return b.exec();
+    //return a.exec();
 }
 

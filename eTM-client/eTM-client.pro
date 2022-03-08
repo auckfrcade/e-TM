@@ -3,12 +3,14 @@ QT += \
     widgets
 
 HEADERS += \
+    include/driversignup.h \
     include/mainwin.h \
     include/signin.h \
     include/signup.h \
     include/sockettest.h
 
 SOURCES += \
+    src/driversignup.cpp \
     src/main.cpp \
     src/mainwin.cpp \
     src/signin.cpp \

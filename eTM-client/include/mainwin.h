@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include "signin.h"
 #include "signup.h"
+#include "driversignup.h"
 
 class mainwin : public QWidget
 {
@@ -14,13 +15,13 @@ public:
     mainwin();
     signin *mySignIn;
     signup *mySignUp;
+    driversignup *myDriverSignUp;
     bool switchFlag = false;
     QPushButton *myButton = new QPushButton("switch", this);
 
-
 public slots:
     void switchTab();
-
+    void newDriver();
 };
 
 #endif // MAINWIN_H
